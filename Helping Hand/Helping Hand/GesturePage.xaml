@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Helping_Hand.GesturePage"
+             Title="Gestures">
+    <ScrollView>
+        
+        <VerticalStackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="Hello" Grid.Row="0" Text="Hello" Grid.Column="0" Margin="15"  HeightRequest="100" Clicked="Hello_Clicked"/>
+                <Button x:Name="Goodbye" Grid.Row="0" Text="Goodbye" Grid.Column="1" Margin="15" HeightRequest="100"  Clicked="Goodbye_Clicked"/>
+
+                <Button x:Name="Happy" Grid.Row="1" Text="Happy" Grid.Column="0" Margin="15" HeightRequest="100" Clicked="Happy_Clicked"/>
+                <Button x:Name="Sad" Grid.Row="1" Text="Sad" Grid.Column="1" Margin="15" HeightRequest="100" Clicked="Sad_Clicked"/>
+
+                <Button x:Name="Yes" Grid.Row="2" Text="Yes" Grid.Column="0" Margin="15" HeightRequest="100" Clicked="Yes_Clicked"/>
+                <Button x:Name="No" Grid.Row="2" Text="No" Grid.Column="1" Margin="15" HeightRequest="100" Clicked="No_Clicked"/>
+
+                <Button x:Name="Thankyou" Grid.Row="3" Text="Thank You" Grid.Column="0" Margin="15" HeightRequest="100" Clicked="Thankyou_Clicked"/>
+                <Button x:Name="Please" Grid.Row="3" Text="Please" Grid.Column="1" Margin="15" HeightRequest="100" Clicked="Please_Clicked"/>
+
+                <Button x:Name="Hungry" Grid.Row="4" Text="Hungry" Grid.Column="0" Margin="15" HeightRequest="100" Clicked="Hungry_Clicked"/>
+                <Button x:Name="Thirsty" Grid.Row="4" Text="Thirsty" Grid.Column="1" Margin="15" HeightRequest="100" Clicked="Thirsty_Clicked" />
+
+                <Button x:Name="You" Grid.Row="5" Text="You" Grid.Column="0" Margin="15" HeightRequest="100"  Clicked="You_Clicked"/>
+                <Button x:Name="Me" Grid.Row="5" Text="Me" Grid.Column="1" Margin="15" HeightRequest="100" Clicked="Me_Clicked" />
+                
+            </Grid>
+        
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
