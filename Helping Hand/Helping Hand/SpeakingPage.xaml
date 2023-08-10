@@ -4,9 +4,11 @@
              x:Class="Helping_Hand.SpeakingPage"
              Title="Speaking">
     
-    <VerticalStackLayout>
-        <Label Text="Speak" VerticalOptions="Center" HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <StackLayout>
+        <Frame BorderColor="Gray" Margin="20" Padding="10">
+            <Entry x:Name="enterText" Placeholder="What to say?" PlaceholderColor="Grey" Margin="10"  Completed="enterText_Completed" />
+        </Frame>
+    </StackLayout>
 
 
 </ContentPage>
